@@ -127,10 +127,19 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CategorieController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MarqueController.cs" />
+    <Compile Include="Controllers\ProduitController.cs" />
+    <Compile Include="DAL\EcommerceContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202204281207195_InitialCreate.cs" />
+    <Compile Include="Migrations\202204281207195_InitialCreate.designer.cs">
+      <DependentUpon>202204281207195_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Categorie.cs" />
     <Compile Include="Models\Marque.cs" />
     <Compile Include="Models\Produit.cs" />
@@ -172,6 +181,21 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Produit\Create.cshtml" />
+    <Content Include="Views\Produit\Delete.cshtml" />
+    <Content Include="Views\Produit\Details.cshtml" />
+    <Content Include="Views\Produit\Edit.cshtml" />
+    <Content Include="Views\Produit\Index.cshtml" />
+    <Content Include="Views\Marque\Create.cshtml" />
+    <Content Include="Views\Marque\Delete.cshtml" />
+    <Content Include="Views\Marque\Details.cshtml" />
+    <Content Include="Views\Marque\Edit.cshtml" />
+    <Content Include="Views\Marque\Index.cshtml" />
+    <Content Include="Views\Categorie\Create.cshtml" />
+    <Content Include="Views\Categorie\Delete.cshtml" />
+    <Content Include="Views\Categorie\Details.cshtml" />
+    <Content Include="Views\Categorie\Edit.cshtml" />
+    <Content Include="Views\Categorie\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -188,6 +212,11 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202204281207195_InitialCreate.resx">
+      <DependentUpon>202204281207195_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
